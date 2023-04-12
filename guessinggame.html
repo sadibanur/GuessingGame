@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+ <html lang="en">  
+ <head>  
+   <meta charset="UTF-8">  
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <title>Guessing Game</title> 
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To Guessing Game</h1><br>
+        <h3><p id = "startMessage">Click on Play to start the game</p><br><br></h3>
+        <input type="text" placeholder=" Guess " id="guess"><br><br>
+        <button onclick="play()"><b>GUESS</b></button>
+        <p id = "result1"></p><br>
+        <p id = "result2"></p><br>
+        <p id = "result3"></p><br>
+        <h3><p id = "playAgain"></p><br></h3>
+        <div id="buttonContainer">
+            <b><input id = "playButton" type = "button" value ="Play" onclick="newGame()"/>
+            <b><input id = "exitButton" type = "button" value = "Exit" onclick="javascript:window.close()"/>
+        </div>
+    </div>
+    <script src="play.js"></script>
+</body>
